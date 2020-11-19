@@ -25,6 +25,6 @@ while True:
     last_bytes = unpacked_bytes[0] & 0x7fffffff
     print("last bytes：", last_bytes)
     code1 = last_bytes % (10 ** 6)
-    print("verify code：", code1)
+    print("verify code：%06d" % code1)
 
     time.sleep(5)
